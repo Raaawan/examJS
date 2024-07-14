@@ -1,0 +1,148 @@
+body , .side-menu{
+  background-color: #0d0d0d;
+  overflow: hidden;
+  color: #fff;
+}
+.loading{
+  z-index: 9999;
+}
+/*=======start Side menu==========*/
+.side-menu{
+  width: 26%;
+  z-index: 999;
+  left: -22.5%;
+  overflow: hidden;
+}
+.side-menu .row .navbar-nav .vstack .navbar-links a{
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  margin-top: 150%;  
+}
+.side-menu .row .navbar-nav .vstack .icon-image{
+  width: 50px;
+}
+.side-menu .row .navbar-icons{
+  width: 15%;
+  background-color: white;
+  position: absolute;
+  right: 0;
+}
+.side-menu .row .navbar-icons i {
+  cursor: pointer;
+}
+.navbar-links{
+  height: 250px;
+}
+.side-menu .row .navbar-nav .vstack .navbar-footer-icons i{
+  cursor: pointer;
+}
+.side-menu .row .navbar-nav .vstack .navbar-footer-icons  p{
+  width: 90%;
+}
+/* =============End side nav============== */
+/* =============start meduim screen code============== */
+@media screen and (max-width: 992px){
+  .side-menu{
+    width: 57%;
+        left: -45.5%;
+  }
+  .side-menu .row .navbar-icons{
+      width: 20%;
+      
+  }
+
+}
+/* =============end meduim screen code============== */
+/* =============start small screen code============== */
+@media screen and (max-width: 576px){
+  .side-menu{
+    width: 80%;
+    left: -65.5%;
+  }
+  .side-menu .row .navbar-icons{
+      width: 20%;
+  }
+}
+/* =============end small screen code============== */
+
+.card{
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #000;
+  cursor: pointer;
+  
+}
+.layer{
+  background-color: #ffffffc2;
+  position: absolute;
+  top: 0;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+.special{
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.card-body{
+  position: absolute;
+  top: 305px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 1s;
+}
+.card-body h4{
+  padding-left: 10px;
+}
+ .card:hover .card-body{
+  top: 0;
+}
+.mainsection .container .meal-details .col-md-8 .instructions h2{
+  font-size: 30px;
+}
+.mainsection .container .meal-details .col-md-8 .instructions p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.search-input{
+  background-color: #0d0d0d !important;
+  border: 1px solid #f8f8f8;
+  color: #ccc !important;
+  width: 80%;
+  margin: auto;
+}
+.search-input::placeholder {
+  color: #686868;
+  }
+
+.cursor{
+  cursor: pointer;
+}
+.validationINput{
+  background-color: #fff !important;
+  color: black !important;
+}
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  display: none;
+}
+.pass-input i{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-right: 30px;
+  transform: translateY(-50%);
+}
+form{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    margin-top: 120px;
+}
